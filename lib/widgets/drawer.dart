@@ -29,6 +29,13 @@ class CustomDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: const Icon(Icons.calculate),
+            title: const Text('BIM Calculator'),
+            onTap: () {
+              Navigator.pushNamed(context, '/bmi_cal');
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.info),
             title: const Text('About'),
             onTap: () {
