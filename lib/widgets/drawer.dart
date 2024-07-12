@@ -36,6 +36,13 @@ class CustomDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: const Icon(Icons.map),
+            title: const Text('Map'),
+            onTap: () {
+              Navigator.pushNamed(context, '/map');
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.info),
             title: const Text('About'),
             onTap: () {
